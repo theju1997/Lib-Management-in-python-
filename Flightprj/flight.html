@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru Airport</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .flight img {
+            width: 10%;
+            height: auto;
+            position: relative;
+            margin-top: 250px;
+            animation: fly 10s linear infinite;
+        }
+
+        @keyframes fly {
+            0% {
+                left: -10%;
+            }
+
+            20% {
+                left: 15%;
+                transform: translateY(-10);
+            }
+
+            45% {
+                left: 45%;
+                transform: translateY(-70%);
+            }
+
+            65% {
+                left: 65%;
+                transform: translateY(-250%);
+            }
+
+            100% {
+                left: 100%;
+                transform: translateY(-350%);
+            }
+        }
+
+        .flight h1 {
+            text-align: center;
+            font-size: 65px;
+        }
+
+        .flight small {
+            color: rgb(212, 255, 0);
+        }
+
+        .flight span {
+            color: red;
+        }
+        body{
+            background-image: url(./bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .menu{
+            font-size: 6em;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flight">
+        <h1>Welcome To <span>Bengaluru</span> Airport <br><small>Short takeoff and landing</small></h1>
+        <img src="./img.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
